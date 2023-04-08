@@ -25,10 +25,10 @@ class FilmAdapter(var listFilm: ArrayList<DataFilm>):RecyclerView.Adapter<FilmAd
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var data = listFilm[position]
-        holder.img.setImageResource(data.img)
-        holder.name.text = data.nama
-        holder.tanggal.text = data.tanggal
+            var data = listFilm[position]
+            holder.img.setImageResource(data.img)
+            holder.name.text = data.nama
+            holder.tanggal.text = data.tanggal
     }
 
     fun setFilmData(listStudent: ArrayList<DataFilm>){
